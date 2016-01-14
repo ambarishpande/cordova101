@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+     <!--    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" /> -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>My Test App</title>
+        <style type="text/css">
+
+            .brand-logo{
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+
+<div class="navbar-fixed">
+    
+
+<nav class="cyan">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="blank" href="sass.html">Sass</a></li>
+        <li><a class="blank" href="badges.html">Components</a></li>
+        <li><a class="blank" href="collapsible.html">Javascript</a></li>
+        <li><a class="blank" href="mobile.html">Mobile</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a class="blank" href="sass.html">Sass</a></li>
+        <li><a class="blank" href="badges.html">Components</a></li>
+        <li><a class="blank" href="collapsible.html">Javascript</a></li>
+        <li><a class="blank" href="mobile.html">Mobile</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>        
+  <div class="row" >
+    <div class="col s12" style="padding:0px;position:fixed;z-index:997;">
+      <ul class="tabs">
+        <li class="tab col s3"><a class="blank active" href="#test1">Test 1</a></li>
+        <li class="tab col s3"><a class="blank " href="#test2">Test 2</a></li>
+      </ul>
+    </div>
+    <div id="test1" class="col s12" style="margin-top:70px;">
+        <div class="row">
+             <div class="input-field col s12">
+                 <input  id="name" type="text" class="validate">
+                  <label for="name">Name</label>
+             </div>
+            <button id="submit" class="waves-effect btn">Add</button>
+             <button id="delete" class="waves-effect btn">Delete All</button>
+<button id="show" class="waves-effect btn">Show</button>
+            
+            <div id="content">
+                
+            </div>
+        </div>
+       
+
+    </div>
+    <div id="test2" class="col s12" style="margin-top:70px;">
+        <button id = "cameraTakePicture">TAKE PICTURE</button>
+        <img id = "myImage"></img>
+
+    </div>
+    </div>
+        
+
+
+
+        <div id="dev-null" style="display: none"></div>
+        <script src="js/jquery-1.12.0.min.js"></script>
+      <!--  <script src="js/jquery.mobile-1.4.5.min.js"></script>-->
+  
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function () {
+            // body...
+            $('ul.tabs').tabs();
+            $(".button-collapse").sideNav();
+        
+        });
+        </script>
+    </body>
+</html>
